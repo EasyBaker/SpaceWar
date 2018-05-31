@@ -1,12 +1,12 @@
 # Space Invaders
 
-## Objective
+### Objective
 
 -Kill all the mobs
 -Survive until you kill all the mobs
 -Shoot precisely and accurately in order to have a good accuracy score
 
-## Controls
+### Controls
 
 -a --> left
 -d --> right
