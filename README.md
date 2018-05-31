@@ -1,5 +1,5 @@
 # Space Invaders
-(https://github.com/TrumpNat1onSpaceWar/raw/master/images/StartScreen.png "Logo Title Text 1")
+[Background]: (https://github.com/TrumpNat1onSpaceWar/raw/master/images/StartScreen.png "Start Screen")
 ## Objective
 
 -Kill all the mobs
