@@ -15,4 +15,5 @@ Save the galaxy from the evil sith & their tiefighters and bombers!
 
 ## ScreenShots
 ![alt-text](https://raw.github.com/TrumpNat1on/SpaceWar/master/images/StartScreen.PNG "Start Screen")
+![alt-text](https://raw.github.com/TrumpNat1on/SpaceWar/master/images/MidScreen.PNG "Mid Screen")
 ![alt-text](https://raw.github.com/TrumpNat1on/SpaceWar/master/images/EndScreen.PNG "End Screen")
