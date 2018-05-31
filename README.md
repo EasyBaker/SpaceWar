@@ -13,4 +13,4 @@
 -space --> shoot
 
 ## ScreenShots
-![Start Screen](https://github.com/TrumpNat1onSpaceWar/master/images/StartScreen.PNG "Start Screen")
+![alt-text](https://raw.github.com/TrumpNat1on/SpaceWar/master/images/StartScreen.PNG "Start Screen")
