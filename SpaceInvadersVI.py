@@ -10,6 +10,9 @@ if getattr(sys, 'frozen', False):
 else:
     current_path = os.path.dirname(__file__)
 
+high_score_file = "high_score.txt"
+exists = os.path.exists(high_score_file)
+
 # Initialize game engine
 pygame.init()
 
@@ -261,7 +264,7 @@ class Fleet:
             bomber.drop_bomb()
 
 def setup():
-    global player, lasers, mobs, UFOs, bombs, fleet, stage, ship, high_score, ufo, accuracy, shots_taken
+    global player, lasers, mobs, UFOs, bombs, fleet, stage, ship, ufo, high_score, accuracy, shots_taken
 
     ufo_position = random.randint(-2000, -200)
     # Make game objects
@@ -281,9 +284,14 @@ def setup():
     mob12 = Mob(928, 293.3333, mob_img)
     mob13= Mob(1088, 293.3333, mob_img)
 
-
-    with open('high_score.txt') as high_score_file:
-        high_score = int(high_score_file.read())
+    if exists:
+        with open('high_score.txt') as high_score_file:
+            high_score = int(high_score_file.read())
+    elif not exists:
+        print("not exists")
+        '''with open(high_score_file, 'w') as f:
+            f.write("0")
+            print("not exists")'''
  
     # Make sprite groups
     player = pygame.sprite.GroupSingle()
@@ -324,10 +332,11 @@ def show_subtitle_screen():
 
 def show_stats():
     score_text = FONT_MD.render("Score " + str(player.score), 1, WHITE)
-    '''high_score_text = FONT_MD.render("High Score " + str(high_score), 1, WHITE)'''
     shield_text = FONT_MD.render("Shield " + str(ship.shield), 1, WHITE)
+    if exists:
+        high_score_text = FONT_MD.render("High Score " + str(high_score), 1, WHITE)
+        screen.blit(high_score_text, (32, 64))
     screen.blit(score_text, (32, 32))
-    '''screen.blit(high_score_text, (32, 64))'''
     screen.blit(shield_text, (32, 96))
 
 def show_accuracy():
@@ -427,9 +436,10 @@ while not done:
         show_kills()
         show_accuracy()
         show_restart()
-        if player.score > high_score:
-            writehighscore = open("high_score.txt", "w")
-            writehighscore.write(str(player.score))
+        if exists:
+            if player.score > high_score:
+                writehighscore = open("high_score.txt", "w")
+                writehighscore.write(str(player.score))
         
     
     # Update screen (Actually draw the picture in the window.)
