@@ -35,10 +35,10 @@ YELLOW = (255, 255, 0)
 GREEN = (100, 255, 100)
 
 # Fonts
-FONT_SM = pygame.font.Font("fonts/pdark.ttf", 24)
-FONT_MD = pygame.font.Font("fonts/pdark.ttf", 32)
-FONT_LG = pygame.font.Font("fonts/pdark.ttf", 64)
-FONT_XL = pygame.font.Font("fonts/pdark.ttf", 96)
+FONT_SM = pygame.font.Font(current_path + "/fonts/pdark.ttf", 24)
+FONT_MD = pygame.font.Font(current_path + "/fonts/pdark.ttf", 32)
+FONT_LG = pygame.font.Font(current_path + "/fonts/pdark.ttf", 64)
+FONT_XL = pygame.font.Font(current_path + "/fonts/pdark.ttf", 96)
 
 # Images
 falcon_img = pygame.image.load(current_path + '/images/falcon.png')
@@ -52,13 +52,13 @@ TieBomber_img = pygame.image.load(current_path + '/images/tie_bomber.png')
 VTieFighter_img = pygame.image.load(current_path + '/images/v_tie_fighter.png')
 
 # Sound Effects
-EXPLOSION = pygame.mixer.Sound('sounds/Explosion3.wav')
-SHOT_sound = pygame.mixer.Sound('sounds/Explosion5.wav')
-BombDrop_sound = pygame.mixer.Sound('sounds/Pew-Pew.wav')
+EXPLOSION = pygame.mixer.Sound(current_path + '/sounds/Explosion3.wav')
+SHOT_sound = pygame.mixer.Sound(current_path + '/sounds/Explosion5.wav')
+BombDrop_sound = pygame.mixer.Sound(current_path + '/sounds/Pew-Pew.wav')
 
-songs = ["sounds/Cantina_Band.ogg",
-         "sounds/Parade_Of_The_Ewoks.ogg",
-         "sounds/Yoda_And_The_Younglings.ogg"]
+songs = [current_path + "/sounds/Cantina_Band.ogg",
+         current_path + "/sounds/Parade_Of_The_Ewoks.ogg",
+         current_path + "/sounds/Yoda_And_The_Younglings.ogg"]
 
 # Stages
 START = 0
@@ -261,7 +261,7 @@ class Fleet:
             bomber.drop_bomb()
 
 def setup():
-    global player, lasers, mobs, UFOs, bombs, fleet, stage, ship, ufo, high_score, accuracy, shots_taken
+    global player, lasers, mobs, UFOs, bombs, fleet, stage, ship, high_score, ufo, accuracy, shots_taken
 
     ufo_position = random.randint(-2000, -200)
     # Make game objects
@@ -324,10 +324,10 @@ def show_subtitle_screen():
 
 def show_stats():
     score_text = FONT_MD.render("Score " + str(player.score), 1, WHITE)
-    high_score_text = FONT_MD.render("High Score " + str(high_score), 1, WHITE)
+    '''high_score_text = FONT_MD.render("High Score " + str(high_score), 1, WHITE)'''
     shield_text = FONT_MD.render("Shield " + str(ship.shield), 1, WHITE)
     screen.blit(score_text, (32, 32))
-    screen.blit(high_score_text, (32, 64))
+    '''screen.blit(high_score_text, (32, 64))'''
     screen.blit(shield_text, (32, 96))
 
 def show_accuracy():
