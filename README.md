@@ -23,9 +23,9 @@ space --> shoot
 ![alt-text](https://raw.github.com/TrumpNat1on/SpaceWar/master/images/StartScreen.PNG "Start Screen")
 ![alt-text](https://raw.github.com/TrumpNat1on/SpaceWar/master/images/MidScreen.PNG "Mid Screen")
 ![alt-text](https://raw.github.com/TrumpNat1on/SpaceWar/master/images/EndScreen.PNG "End Screen")
-
-## Characters
 ![alt-text](https://raw.github.com/TrumpNat1on/SpaceWar/master/images/falcon.PNG "Millennium Falcon")
 ![alt-text](https://raw.github.com/TrumpNat1on/SpaceWar/master/images/Tiefighter.PNG "Tie-Fighter")
 ![alt-text](https://raw.github.com/TrumpNat1on/SpaceWar/master/images/tie_bomber.PNG "Tie-Bomber")
 ![alt-text](https://raw.github.com/TrumpNat1on/SpaceWar/master/images/v_tie_fighter.PNG "Vader's-Tie-Fighter")
+## Characters
+
