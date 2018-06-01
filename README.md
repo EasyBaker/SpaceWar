@@ -26,7 +26,7 @@ space --> shoot
 ### Good Guy
 ![alt-text](https://raw.github.com/TrumpNat1on/SpaceWar/master/images/falcon.png "Millennium Falcon")  
 
-### Bad Guy 
+### Bad Guys
 ![alt-text](https://raw.github.com/TrumpNat1on/SpaceWar/master/images/tie_bomber.png "Tie-Bomber")  
 ![alt-text](https://raw.github.com/TrumpNat1on/SpaceWar/master/images/v_tie_fighter.png "Vader's-Tie-Fighter")  
-    ![alt-text](https://raw.github.com/TrumpNat1on/SpaceWar/master/images/Tiefighter.png "Tie-Fighter") 
+![alt-text](https://raw.github.com/TrumpNat1on/SpaceWar/master/images/Tiefighter.png "Tie-Fighter") 
