@@ -15,9 +15,9 @@ Shoot precisely and accurately in order to have a good accuracy score.
 
 ## Controls
 
--a --> left
--d --> right
--space --> shoot
+-a --> left.
+-d --> right.
+-space --> shoot.
 
 ## ScreenShots
 ![alt-text](https://raw.github.com/TrumpNat1on/SpaceWar/master/images/StartScreen.PNG "Start Screen")
