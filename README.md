@@ -1,7 +1,8 @@
 # Space Invaders
 
 ##### .exe file
-https://github.com/TrumpNat1on/SpaceWar/releases/tag/1.0.0
+[file](https://github.com/TrumpNat1on/SpaceWar/releases/tag/1.0.0)
+
 ## About
 Save the galaxy from the evil sith & their tiefighters and bombers!  
 In this game you will survive long enough to destroy all the enemy mobs(tie-fighters, tie-bombers, and vader's own ship)  
